@@ -90,7 +90,7 @@ function App() {
             </div>
           </div>
           <div
-            id='book-pagePage-right'
+            id='turn-1'
             className='absolute h-full w-6/12 flex bg-slate-50 shadow-lg p-[2rem] right-0 transform-style-3d'
           >
             <div
@@ -163,6 +163,19 @@ function App() {
                   </p>
                 </div>
               </div>
+              <span
+                id='number-page'
+                className='text-gray-800 absolute bottom-[1.2rem] -translate-x-1/2'
+              >
+                1
+              </span>
+              <span
+                id='nextprev-btn'
+                className='absolute w-6 h-6 bottom-4 right-6 cursor-pointer justify-center items-center inline-flex'
+                data-page='turn-1'
+              >
+                <box-icon name='chevron-right' color='#1f2937'></box-icon>
+              </span>
             </div>
             <div
               id='page-back'
