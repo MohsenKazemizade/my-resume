@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import image from './assets/photo_2024-01-28_15-49-04.jpg';
+import { SliderLatestvWorks } from './components/SliderPrevWorks';
 import 'boxicons';
 import './App.css';
 
@@ -543,89 +544,10 @@ function App() {
               id='page-front3'
               className='absolute top-0 left-0 h-full w-full bg-gradient-to-r from-slate-700 to-slate-950 rotate-y-0 translate-z-px py-6 px-8'
             >
-              <h1 className='text-gray-200 text-4xl font-bold mb-8'>
-                page-front3
+              <h1 className='text-gray-200 text-4xl font-bold mb-6'>
+                Latest Projects
               </h1>
-              <div id='services-box' className='flex flex-wrap gap-6'>
-                <div
-                  id='services-content'
-                  className='services-content justify-center items-center text-center border-2 border-yellow-500 hover:shadow-yellow-500 p-4 shadow-sm rounded hover:shadow-lg transition duration-300 ease-in-out'
-                >
-                  <box-icon
-                    size='lg'
-                    name='code-alt'
-                    color='#eab308'
-                  ></box-icon>
-                  <h3 className='text-gray-200 font-bold'>Web Development</h3>
-                  <p className='text-gray-200 text-sm m-2'>
-                    i am a good developer acording to my self and yes i am
-                    selfish
-                  </p>
-                  <button className='h-10 py-0 bg-yellow-500 shadow-sm border-2 border-yellow-500 hover:bg-gray-600 hover:text-yellow-500 text-gray-600 transition duration-300 ease-in-out'>
-                    Read More
-                  </button>
-                </div>
-                <div
-                  id='services-content'
-                  className='services-content justify-center items-center text-center border-2 border-yellow-500 hover:shadow-yellow-500 p-4 shadow-sm rounded hover:shadow-lg transition duration-300 ease-in-out'
-                >
-                  <box-icon
-                    size='lg'
-                    type='logo'
-                    color='#eab308'
-                    name='tailwind-css'
-                  ></box-icon>
-                  <h3 className='text-gray-200 font-bold'>
-                    Tailwind Css Master
-                  </h3>
-                  <p className='text-gray-200 text-sm m-2'>
-                    Tailwind CSS is the only framework that I've seen scale on
-                    large teams.
-                  </p>
-                  <button className='h-10 py-0 bg-yellow-500 shadow-sm border-2 border-yellow-500 hover:bg-gray-600 hover:text-yellow-500 text-gray-600 transition duration-300 ease-in-out'>
-                    Read More
-                  </button>
-                </div>
-                <div
-                  id='services-content'
-                  className='services-content justify-center items-center text-center border-2 border-yellow-500 hover:shadow-yellow-500 p-4 shadow-sm rounded hover:shadow-lg transition duration-300 ease-in-out'
-                >
-                  <box-icon
-                    size='lg'
-                    type='logo'
-                    color='#eab308'
-                    name='react'
-                  ></box-icon>
-                  <h3 className='text-gray-200 font-bold'>React Developer</h3>
-                  <p className='text-gray-200 text-sm m-2'>
-                    React lets you build user interfaces out of individual
-                    pieces.
-                  </p>
-                  <button className='h-10 py-0 bg-yellow-500 shadow-sm border-2 border-yellow-500 hover:bg-gray-600 hover:text-yellow-500 text-gray-600 transition duration-300 ease-in-out'>
-                    Read More
-                  </button>
-                </div>
-                <div
-                  id='services-content'
-                  className='services-content justify-center items-center text-center border-2 border-yellow-500 hover:shadow-yellow-500 p-4 shadow-sm rounded hover:shadow-lg transition duration-300 ease-in-out'
-                >
-                  <box-icon
-                    size='lg'
-                    name='javascript'
-                    type='logo'
-                    color='#eab308'
-                  ></box-icon>
-                  <h3 className='text-gray-200 font-bold'>
-                    Javascript Developer
-                  </h3>
-                  <p className='text-gray-200 text-sm m-2'>
-                    JavaScript is a lightweight interpreted programming language
-                  </p>
-                  <button className='h-10 py-0 bg-yellow-500 shadow-sm border-2 border-yellow-500 hover:bg-gray-600 hover:text-yellow-500 text-gray-600 transition duration-300 ease-in-out'>
-                    Read More
-                  </button>
-                </div>
-              </div>
+              <SliderLatestvWorks />
               <span className='text-gray-200 absolute bottom-[1.2rem] -translate-x-1/2'>
                 5
               </span>
