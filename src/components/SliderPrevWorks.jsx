@@ -22,7 +22,7 @@ export const SliderLatestvWorks = () => {
                   Help people all aver the world
                 </p>
               </div>
-              <button className='h-8 py-0 text-sm bg-yellow-500 shadow-sm border-2 border-yellow-500 hover:bg-gray-600 hover:text-yellow-500 hover:border-yellow-500 text-gray-600 transition duration-300 ease-in-out'>
+              <button className='h-8 py-0 text-sm bg-transparent shadow-sm border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-800 hover:border-yellow-500 text-yellow-500 transition duration-300 ease-in-out'>
                 preveiw
               </button>
             </div>
@@ -46,7 +46,7 @@ export const SliderLatestvWorks = () => {
                   Help people all aver the world
                 </p>
               </div>
-              <button className='h-8 py-0 text-sm bg-yellow-500 shadow-sm border-2 border-yellow-500 hover:bg-gray-600 hover:text-yellow-500 hover:border-yellow-500 text-gray-600 transition duration-300 ease-in-out'>
+              <button className='h-8 py-0 text-sm bg-transparent shadow-sm border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-800 hover:border-yellow-500 text-yellow-500 transition duration-300 ease-in-out'>
                 preveiw
               </button>
             </div>
@@ -70,7 +70,7 @@ export const SliderLatestvWorks = () => {
                   Help people all aver the world
                 </p>
               </div>
-              <button className='h-8 py-0 text-sm bg-yellow-500 shadow-sm border-2 border-yellow-500 hover:bg-gray-600 hover:text-yellow-500 hover:border-yellow-500 text-gray-600 transition duration-300 ease-in-out'>
+              <button className='h-8 py-0 text-sm bg-transparent shadow-sm border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-800 hover:border-yellow-500 text-yellow-500 transition duration-300 ease-in-out'>
                 preveiw
               </button>
             </div>
@@ -94,7 +94,7 @@ export const SliderLatestvWorks = () => {
                   Help people all aver the world
                 </p>
               </div>
-              <button className='h-8 py-0 text-sm bg-yellow-500 shadow-sm border-2 border-yellow-500 hover:bg-gray-600 hover:text-yellow-500 hover:border-yellow-500 text-gray-600 transition duration-300 ease-in-out'>
+              <button className='h-8 py-0 text-sm bg-transparent shadow-sm border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-800 hover:border-yellow-500 text-yellow-500 transition duration-300 ease-in-out'>
                 preveiw
               </button>
             </div>
