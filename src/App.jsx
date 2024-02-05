@@ -32,6 +32,20 @@ function App() {
       }, 150);
     }, 200);
   };
+  const goToContactMe = () => {
+    setTimeout(() => {
+      let num = pageCount + 1;
+      setPageCount(num);
+      setTimeout(() => {
+        let num = pageCount + 2;
+        setPageCount(num);
+        setTimeout(() => {
+          let num = pageCount + 3;
+          setPageCount(num);
+        }, 100);
+      }, 150);
+    }, 200);
+  };
 
   const turnOnePageOne = pageCount == 1 ? 'z-30' : '';
   const turnTwoPageOne = pageCount == 2 ? '-rotate-y-180 z-20' : '';
@@ -129,10 +143,13 @@ function App() {
                 collaborative growth.
               </p>
               <div className='w-full flex justify-evenly my-auto'>
-                <button className='bg-transparent shadow-sm border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-800 transition duration-300 ease-in-out text-yellow-500'>
+                <button className='bg-yellow-500 shadow-sm border-2 border-yellow-500 hover:bg-transparent hover:text-yellow-500 transition duration-300 ease-in-out text-gray-800'>
                   Download CV
                 </button>
-                <button className='bg-transparent shadow-sm border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-800 transition duration-300 ease-in-out text-yellow-500'>
+                <button
+                  onClick={goToContactMe}
+                  className='bg-transparent shadow-sm border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-800 transition duration-300 ease-in-out text-yellow-500'
+                >
                   Contact Me
                 </button>
               </div>
@@ -340,7 +357,7 @@ function App() {
                     i am a good developer acording to my self and yes i am
                     selfish
                   </p>
-                  <button className='h-10 py-0 bg-yellow-500 shadow-sm border-2 border-yellow-500 hover:bg-transparent hover:text-yellow-500 text-gray-800 transition duration-300 ease-in-out'>
+                  <button className='h-10 py-0 bg-transparent shadow-sm border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-800 text-yellow-500 transition duration-300 ease-in-out'>
                     Read More
                   </button>
                 </div>
@@ -361,7 +378,7 @@ function App() {
                     Tailwind CSS is the only framework that I've seen scale on
                     large teams.
                   </p>
-                  <button className='h-10 py-0 bg-yellow-500 shadow-sm border-2 border-yellow-500 hover:bg-transparent hover:text-yellow-500 text-gray-800 transition duration-300 ease-in-out'>
+                  <button className='h-10 py-0 bg-transparent shadow-sm border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-800 text-yellow-500 transition duration-300 ease-in-out'>
                     Read More
                   </button>
                 </div>
@@ -380,7 +397,7 @@ function App() {
                     React lets you build user interfaces out of individual
                     pieces.
                   </p>
-                  <button className='h-10 py-0 bg-yellow-500 shadow-sm border-2 border-yellow-500 hover:bg-transparent hover:text-yellow-500 text-gray-800 transition duration-300 ease-in-out'>
+                  <button className='h-10 py-0 bg-transparent shadow-sm border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-800 text-yellow-500 transition duration-300 ease-in-out'>
                     Read More
                   </button>
                 </div>
@@ -400,7 +417,7 @@ function App() {
                   <p className='text-gray-200 text-sm m-2'>
                     JavaScript is a lightweight interpreted programming language
                   </p>
-                  <button className='h-10 py-0 bg-yellow-500 shadow-sm border-2 border-yellow-500 hover:bg-transparent hover:text-yellow-500 text-gray-800 transition duration-300 ease-in-out'>
+                  <button className='h-10 py-0 bg-transparent shadow-sm border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-800 text-yellow-500 transition duration-300 ease-in-out'>
                     Read More
                   </button>
                 </div>
