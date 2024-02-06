@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const SliderLatestvWorks = () => {
+const SliderProjects = () => {
   return (
     <div className='flex items-end justify-center'>
       <div className='flex flex-col gap-2 h-4/6'>
@@ -152,3 +152,4 @@ export const SliderLatestvWorks = () => {
     </div>
   );
 };
+export default SliderProjects;
