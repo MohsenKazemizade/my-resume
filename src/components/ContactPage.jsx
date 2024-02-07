@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-const ContactMe = ({ backToFirstPage, previousPage }) => {
+const ContactMe = ({ backToProfilePage, previousPage }) => {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [msg, setMsg] = useState('');
@@ -121,7 +121,7 @@ const ContactMe = ({ backToFirstPage, previousPage }) => {
         <box-icon name='chevron-left' color='#e5e7eb'></box-icon>
       </span>
       <div
-        onClick={backToFirstPage}
+        onClick={backToProfilePage}
         className='group absolute w-10 h-10 bottom-4 right-6 cursor-pointer justify-center items-center inline-flex nextprev-btn rounded border-2 border-yellow-500 hover:bg-yellow-500 hover:border-yellow-500'
       >
         <span className=' fill-yellow-500 group-hover:fill-gray-900 '>

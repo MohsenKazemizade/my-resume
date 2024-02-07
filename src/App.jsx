@@ -22,7 +22,7 @@ function App() {
     if (pageCount == 1) return;
     setPageCount(num - 1);
   };
-  const backToProfile = () => {
+  const backToProfilePage = () => {
     setTimeout(() => {
       let num = pageCount - 1;
       setPageCount(num);
@@ -106,7 +106,7 @@ function App() {
             <LastProjectPage next={onNextPage} />
             <ContactPage
               previousPage={onPreviousPage}
-              backToFirstPage={backToProfile}
+              backToProfilePage={backToProfilePage}
             />
           </div>
         </div>
