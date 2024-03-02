@@ -1,5 +1,4 @@
 import React from 'react';
-
 const ServicesPage = ({ next }) => {
   return (
     <div
@@ -9,73 +8,177 @@ const ServicesPage = ({ next }) => {
     >
       <h1 className='text-gray-200 text-4xl font-bold mb-8'>My Services</h1>
       <div id='services-box' className='flex flex-wrap gap-6'>
-        <div
-          id='services-content'
-          className='services-content justify-center items-center text-center border-2 border-yellow-500 hover:shadow-yellow-500 p-4 shadow-sm rounded hover:shadow-lg transition duration-300 ease-in-out'
-        >
-          <box-icon size='lg' name='code-alt' color='#eab308'></box-icon>
-          <h3 className='text-gray-200 font-bold'>Web Development</h3>
+        <div className='services-content cursor-pointer justify-center items-center text-center border-2 border-yellow-500 hover:shadow-yellow-500 p-2 shadow-sm rounded hover:shadow-lg transition duration-300 ease-in-out'>
+          <svg
+            fill='#eab308'
+            width='50px'
+            height='50px'
+            viewBox='0 0 396 396'
+            className='mx-auto my-2'
+          >
+            <g>
+              <path
+                d='M304.42,330.901h-43.219c-1.56,0-2.834-1.273-2.834-2.834v-10.52c0-1.559-1.275-2.834-2.834-2.834h-60.475
+					c-1.56,0-2.835,1.275-2.835,2.834v10.52c0,1.561-1.275,2.834-2.835,2.834h-32.491c-1.56,0-2.835,1.275-2.835,2.834v12.17
+					c0,1.559,1.275,2.834,2.835,2.834h147.521c1.559,0,2.834-1.275,2.834-2.834v-12.17C307.254,332.179,305.979,330.901,304.42,330.901
+					z'
+              />
+              <g>
+                <path
+                  d='M377.032,46.368h-308.4c-10.73,0-19.459,8.73-19.459,19.462c0,0,0,37.109,0,50.761c0,6.711-0.498,7.66,4.004,7.66
+						c2.391,0,5.039,0,7.72,0c3.778,0,3.003-0.949,3.003-7.785c0-13.621,0-50.636,0-50.636c0-2.565,2.168-4.733,4.732-4.733h308.4
+						c2.563,0,4.731,2.168,4.731,4.733v189.999h-219.87c0,0-7.749-0.014-7.749,10.006c0,5.941,0,17.823,0,23.766
+						c0,10.006,8,10.006,8,10.006h214.888c10.729,0,19.461-8.729,19.461-19.459V65.83C396.493,55.099,387.763,46.368,377.032,46.368z
+						M222.833,282.804c-4.845,0-8.771-3.926-8.771-8.768s3.926-8.77,8.771-8.77c4.84,0,8.767,3.928,8.767,8.77
+						S227.673,282.804,222.833,282.804z'
+                />
+                <path
+                  d='M124.125,141.633H12.559C5.632,141.633,0,147.266,0,154.193v183.372c0,6.926,5.632,12.561,12.559,12.561h111.566
+						c6.923,0,12.559-5.635,12.559-12.561V154.193C136.684,147.266,131.048,141.633,124.125,141.633z M54.58,154.443h27.523
+						c1.313,0,2.38,1.064,2.38,2.381c0,1.314-1.066,2.379-2.38,2.379H54.58c-1.315,0-2.379-1.065-2.379-2.379
+						C52.201,155.507,53.265,154.443,54.58,154.443z M68.175,341.304c-3.59,0-6.5-2.91-6.5-6.5s2.91-6.5,6.5-6.5s6.5,2.91,6.5,6.5
+						S71.765,341.304,68.175,341.304z M125.893,322.2c0,1.676-1.342,3.047-2.98,3.047H13.774c-1.639,0-2.98-1.371-2.98-3.047V169.825
+						c0-1.676,1.342-3.046,2.98-3.046h109.139c1.639,0,2.98,1.371,2.98,3.046V322.2z'
+                />
+              </g>
+            </g>
+          </svg>
+          <h3 className='text-gray-200 font-bold mt-3'>
+            Responsive Web Design
+          </h3>
           <p className='text-gray-200 text-sm m-2'>
-            i am a good developer acording to my self and yes i am selfish
+            Responsive web designs with React JS to ensure your site looks
+            great.
           </p>
-          <button className='h-10 py-0 bg-transparent shadow-sm border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-800 text-yellow-500 transition duration-300 ease-in-out'>
-            Read More
-          </button>
         </div>
         <div
           id='services-content'
-          className='services-content justify-center items-center text-center border-2 border-yellow-500 hover:shadow-yellow-500 p-4 shadow-sm rounded hover:shadow-lg transition duration-300 ease-in-out'
+          className='services-content cursor-pointer justify-center items-center text-center border-2 border-yellow-500 hover:shadow-yellow-500 px-4 py-2 shadow-sm rounded hover:shadow-lg transition duration-300 ease-in-out'
         >
-          <box-icon
-            size='lg'
-            type='logo'
-            color='#eab308'
-            name='tailwind-css'
-          ></box-icon>
-          <h3 className='text-gray-200 font-bold'>Tailwind Css Master</h3>
+          <svg
+            fill='#eab308'
+            width='60px'
+            height='60px'
+            viewBox='0 0 60 65'
+            className='mx-auto my-1'
+          >
+            <path d='M48,48H46v4H28v2H46v3a3,3,0,0,1-3,3H21a3.011,3.011,0,0,1-2.6-1.5l-1.732,1A5.021,5.021,0,0,0,21,62H43a5.006,5.006,0,0,0,5-5Z' />
+            <rect x='31' y='56' width='2' height='2' />
+            <path d='M37,29V27H33.949A13,13,0,0,0,22,15.051V12H20v3.051a12.92,12.92,0,0,0-2,.312V10H34V8H18V7a3,3,0,0,1,3-3H43a3,3,0,0,1,1.984.75l1.323-1.5A4.994,4.994,0,0,0,43,2H21a5.006,5.006,0,0,0-5,5v9A13.017,13.017,0,0,0,8.051,27H5v2H8.053A12.942,12.942,0,0,0,20,40.954V44h2V40.954A12.942,12.942,0,0,0,33.947,29ZM20,37v1.954A10.957,10.957,0,0,1,16,37.8V36a5,5,0,0,1,10,0v1.8a10.976,10.976,0,0,1-4,1.157V37ZM18,26a3,3,0,1,1,3,3A3,3,0,0,1,18,26Zm10.333,10.2c-.108.1-.223.18-.333.272V36a7,7,0,0,0-3.779-6.208,5,5,0,1,0-6.442,0A7,7,0,0,0,14,36v.477c-.111-.091-.226-.176-.333-.272A11.007,11.007,0,0,1,10.053,29H12V27H10.051A11.01,11.01,0,0,1,20,17.051V19h2V17.051A11.01,11.01,0,0,1,31.949,27H30v2h1.947A11.007,11.007,0,0,1,28.333,36.205Z' />
+            <path d='M59,20a1,1,0,0,0,1-1V7a1,1,0,0,0-1-1H37a1,1,0,0,0-1,1V19a1,1,0,0,0,1,1ZM38,8H58V18H38Z' />
+            <rect x='40' y='10' width='4' height='2' />
+            <rect x='46' y='10' width='10' height='2' />
+            <rect x='40' y='14' width='16' height='2' />
+            <path d='M58.823,22a3.17,3.17,0,0,0-2.1.8L48,30.49V22H46V32h.289L40.6,37.02A7,7,0,0,0,34,44v1.764a2.6,2.6,0,0,1-1.447,2.341A1,1,0,0,0,33,50h7a7,7,0,0,0,6.98-6.6L61.206,27.278A3.177,3.177,0,0,0,58.823,22ZM40,48H35.427A4.616,4.616,0,0,0,36,45.764V44a5.007,5.007,0,0,1,4.6-4.984L44.984,43.4A5.006,5.006,0,0,1,40,48ZM59.706,25.955,45.955,41.54,42.46,38.046,58.045,24.294a1.177,1.177,0,0,1,1.661,1.661Z' />
+            <path d='M3,57H25a1,1,0,0,0,1-1V48a1,1,0,0,0-1-1H18V42H16v5H3a1,1,0,0,0-1,1v8A1,1,0,0,0,3,57Zm1-8H24v6H4Z' />
+            <rect x='6' y='51' width='5' height='2' />
+            <rect x='13' y='51' width='9' height='2' />
+            <path d='M3,16H13a1,1,0,0,0,1-1V7a1,1,0,0,0-1-1H3A1,1,0,0,0,2,7v8A1,1,0,0,0,3,16ZM4,8h8v6H4Z' />
+            <rect x='6' y='10' width='4' height='2' />
+          </svg>
+          <h3 className='text-gray-200 font-bold'>UI/UX Development</h3>
           <p className='text-gray-200 text-sm m-2'>
-            Tailwind CSS is the only framework that I've seen scale on large
-            teams.
+            Utilizing React JS to develop intuitive and user-friendly
+            interfaces.
           </p>
-          <button className='h-10 py-0 bg-transparent shadow-sm border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-800 text-yellow-500 transition duration-300 ease-in-out'>
-            Read More
-          </button>
         </div>
         <div
           id='services-content'
-          className='services-content justify-center items-center text-center border-2 border-yellow-500 hover:shadow-yellow-500 p-4 shadow-sm rounded hover:shadow-lg transition duration-300 ease-in-out'
+          className='services-content cursor-pointer justify-center items-center text-center border-2 border-yellow-500 hover:shadow-yellow-500 p-2 shadow-sm rounded hover:shadow-lg transition duration-300 ease-in-out'
         >
-          <box-icon
-            size='lg'
-            type='logo'
-            color='#eab308'
-            name='react'
-          ></box-icon>
-          <h3 className='text-gray-200 font-bold'>React Developer</h3>
+          <svg
+            width='50px'
+            height='50px'
+            viewBox='0 0 32 32'
+            fill='#eab308'
+            className='mx-auto my-1'
+          >
+            <path d='M18.6789 15.9759C18.6789 14.5415 17.4796 13.3785 16 13.3785C14.5206 13.3785 13.3211 14.5415 13.3211 15.9759C13.3211 17.4105 14.5206 18.5734 16 18.5734C17.4796 18.5734 18.6789 17.4105 18.6789 15.9759Z' />
+            <path
+              fill-rule='evenodd'
+              clip-rule='evenodd'
+              d='M24.7004 11.1537C25.2661 8.92478 25.9772 4.79148 23.4704 3.39016C20.9753 1.99495 17.7284 4.66843 16.0139 6.27318C14.3044 4.68442 10.9663 2.02237 8.46163 3.42814C5.96751 4.82803 6.73664 8.8928 7.3149 11.1357C4.98831 11.7764 1 13.1564 1 15.9759C1 18.7874 4.98416 20.2888 7.29698 20.9289C6.71658 23.1842 5.98596 27.1909 8.48327 28.5877C10.9973 29.9932 14.325 27.3945 16.0554 25.7722C17.7809 27.3864 20.9966 30.0021 23.4922 28.6014C25.9956 27.1963 25.3436 23.1184 24.7653 20.8625C27.0073 20.221 31 18.7523 31 15.9759C31 13.1835 26.9903 11.7923 24.7004 11.1537ZM24.4162 19.667C24.0365 18.5016 23.524 17.2623 22.8971 15.9821C23.4955 14.7321 23.9881 13.5088 24.3572 12.3509C26.0359 12.8228 29.7185 13.9013 29.7185 15.9759C29.7185 18.07 26.1846 19.1587 24.4162 19.667ZM22.85 27.526C20.988 28.571 18.2221 26.0696 16.9478 24.8809C17.7932 23.9844 18.638 22.9422 19.4625 21.7849C20.9129 21.6602 22.283 21.4562 23.5256 21.1777C23.9326 22.7734 24.7202 26.4763 22.85 27.526ZM9.12362 27.5111C7.26143 26.47 8.11258 22.8946 8.53957 21.2333C9.76834 21.4969 11.1286 21.6865 12.5824 21.8008C13.4123 22.9332 14.2816 23.9741 15.1576 24.8857C14.0753 25.9008 10.9945 28.557 9.12362 27.5111ZM2.28149 15.9759C2.28149 13.874 5.94207 12.8033 7.65904 12.3326C8.03451 13.5165 8.52695 14.7544 9.12123 16.0062C8.51925 17.2766 8.01977 18.5341 7.64085 19.732C6.00369 19.2776 2.28149 18.0791 2.28149 15.9759ZM9.1037 4.50354C10.9735 3.45416 13.8747 6.00983 15.1159 7.16013C14.2444 8.06754 13.3831 9.1006 12.5603 10.2265C11.1494 10.3533 9.79875 10.5569 8.55709 10.8297C8.09125 9.02071 7.23592 5.55179 9.1037 4.50354ZM20.3793 11.5771C21.3365 11.6942 22.2536 11.85 23.1147 12.0406C22.8562 12.844 22.534 13.6841 22.1545 14.5453C21.6044 13.5333 21.0139 12.5416 20.3793 11.5771ZM16.0143 8.0481C16.6054 8.66897 17.1974 9.3623 17.7798 10.1145C16.5985 10.0603 15.4153 10.0601 14.234 10.1137C14.8169 9.36848 15.414 8.67618 16.0143 8.0481ZM9.8565 14.5444C9.48329 13.6862 9.16398 12.8424 8.90322 12.0275C9.75918 11.8418 10.672 11.69 11.623 11.5748C10.9866 12.5372 10.3971 13.5285 9.8565 14.5444ZM11.6503 20.4657C10.6679 20.3594 9.74126 20.2153 8.88556 20.0347C9.15044 19.2055 9.47678 18.3435 9.85796 17.4668C10.406 18.4933 11.0045 19.4942 11.6503 20.4657ZM16.0498 23.9915C15.4424 23.356 14.8365 22.6531 14.2448 21.8971C15.4328 21.9423 16.6231 21.9424 17.811 21.891C17.2268 22.6608 16.6369 23.3647 16.0498 23.9915ZM22.1667 17.4222C22.5677 18.3084 22.9057 19.1657 23.1742 19.9809C22.3043 20.1734 21.3652 20.3284 20.3757 20.4435C21.015 19.4607 21.6149 18.4536 22.1667 17.4222ZM18.7473 20.5941C16.9301 20.72 15.1016 20.7186 13.2838 20.6044C12.2509 19.1415 11.3314 17.603 10.5377 16.0058C11.3276 14.4119 12.2404 12.8764 13.2684 11.4158C15.0875 11.2825 16.9178 11.2821 18.7369 11.4166C19.7561 12.8771 20.6675 14.4086 21.4757 15.9881C20.6771 17.5812 19.7595 19.1198 18.7473 20.5941ZM22.8303 4.4666C24.7006 5.51254 23.8681 9.22726 23.4595 10.8426C22.2149 10.5641 20.8633 10.3569 19.4483 10.2281C18.6239 9.09004 17.7698 8.05518 16.9124 7.15949C18.1695 5.98441 20.9781 3.43089 22.8303 4.4666Z'
+            />
+          </svg>
+          <h3 className='text-gray-200 font-bold mt-2'>
+            Performance Optimization
+          </h3>
           <p className='text-gray-200 text-sm m-2'>
-            React lets you build user interfaces out of individual pieces.
+            Optimizing front-end performance with React js.
           </p>
-          <button className='h-10 py-0 bg-transparent shadow-sm border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-800 text-yellow-500 transition duration-300 ease-in-out'>
-            Read More
-          </button>
         </div>
         <div
           id='services-content'
-          className='services-content justify-center items-center text-center border-2 border-yellow-500 hover:shadow-yellow-500 p-4 shadow-sm rounded hover:shadow-lg transition duration-300 ease-in-out'
+          className='services-content cursor-pointer justify-center items-center text-center border-2 border-yellow-500 hover:shadow-yellow-500 p-2 shadow-sm rounded hover:shadow-lg transition duration-300 ease-in-out'
         >
-          <box-icon
-            size='lg'
-            name='javascript'
-            type='logo'
-            color='#eab308'
-          ></box-icon>
-          <h3 className='text-gray-200 font-bold'>Javascript Developer</h3>
+          <svg
+            width='50px'
+            height='50px'
+            viewBox='0 0 550 500'
+            fill='#eab308'
+            className='mx-auto my-1'
+          >
+            <g>
+              <g>
+                <g>
+                  <path
+                    d='M309.333,277.333h149.333c5.888,0,10.667-4.779,10.667-10.667S464.555,256,458.667,256H309.333
+					c-5.888,0-10.667,4.779-10.667,10.667S303.445,277.333,309.333,277.333z'
+                  />
+                  <path
+                    d='M309.333,213.333h149.333c5.888,0,10.667-4.779,10.667-10.667S464.555,192,458.667,192H309.333
+					c-5.888,0-10.667,4.779-10.667,10.667S303.445,213.333,309.333,213.333z'
+                  />
+                  <path
+                    d='M309.333,341.333h149.333c5.888,0,10.667-4.779,10.667-10.667S464.555,320,458.667,320H309.333
+					c-5.888,0-10.667,4.779-10.667,10.667S303.445,341.333,309.333,341.333z'
+                  />
+                  <path
+                    d='M309.333,405.333h85.333c5.888,0,10.667-4.779,10.667-10.667S400.555,384,394.667,384h-85.333
+					c-5.888,0-10.667,4.779-10.667,10.667S303.445,405.333,309.333,405.333z'
+                  />
+                  <path
+                    d='M138.667,64C132.779,64,128,68.779,128,74.667s4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667
+					S144.555,64,138.667,64z'
+                  />
+                  <path
+                    d='M458.667,21.333H53.333C23.915,21.333,0,45.269,0,74.667v362.667c0,29.397,23.915,53.333,53.333,53.333h405.333
+					c29.419,0,53.333-23.936,53.333-53.333V74.667C512,45.269,488.085,21.333,458.667,21.333z M490.667,437.333
+					c0,17.643-14.357,32-32,32H53.333c-17.643,0-32-14.357-32-32V128h469.333V437.333z M490.667,106.667H21.333v-32
+					c0-17.643,14.357-32,32-32h405.333c17.643,0,32,14.357,32,32V106.667z'
+                  />
+                  <path d='M53.333,64c-5.888,0-10.667,4.779-10.667,10.667s4.779,10.667,10.667,10.667S64,80.555,64,74.667S59.221,64,53.333,64z' />
+                  <path
+                    d='M53.333,405.333l213.333-0.021c5.888,0,10.667-4.779,10.667-10.667c0-26.731-18.133-49.941-44.011-56.427l-32.021-8
+					l-1.344-5.355c8.299-9.173,14.208-20.885,16.661-33.045c5.696-2.944,9.813-8.533,10.667-15.253l2.304-18.56
+					c0.704-5.632-1.024-11.307-4.757-15.573c-1.152-1.301-2.475-2.453-3.883-3.413l0.533-11.328l1.941-1.941
+					c5.504-5.845,12.949-18.325,1.173-36.331c-5.589-8.555-17.109-18.752-40.192-18.752c-6.805,0-22.144,0-37.035,9.323
+					c-43.904,1.557-49.067,25.216-49.067,43.072c0,3.52,0.64,10.112,1.237,15.616c-1.579,1.003-3.029,2.24-4.288,3.669
+					c-3.797,4.309-5.547,10.005-4.821,15.659l2.304,18.56c0.875,6.955,5.291,12.715,11.797,15.552
+					c2.389,11.627,7.979,22.891,15.765,31.829l-1.557,6.272l-32.021,8c-25.92,6.485-44.053,29.696-44.053,56.448
+					c0,2.837,1.109,5.568,3.115,7.552C47.787,404.203,50.496,405.333,53.333,405.333z M91.925,358.891l38.229-9.557
+					c3.819-0.96,6.805-3.947,7.765-7.765l4.544-18.197c0.939-3.755-0.235-7.723-3.072-10.368
+					c-8.299-7.808-13.803-19.221-14.699-30.528c-0.448-5.525-5.184-8.597-10.752-8.597l-2.752-16.981c3.072,0,5.973-1.301,8-3.605
+					c2.027-2.283,2.965-5.333,2.581-8.384c-0.811-6.443-2.112-18.091-2.112-21.845c0-11.051,0-21.483,31.189-21.803
+					c2.176-0.021,4.309-0.704,6.101-1.984C167.104,192,178.795,192,184.405,192c11.008,0,18.325,2.965,22.336,9.088
+					c4.331,6.635,2.56,8.512,1.365,9.813l-4.629,4.629c-1.877,1.877-2.987,4.373-3.115,7.019l-1.131,23.211
+					c-0.128,2.901,0.213,4.928,2.197,7.04c2.005,2.112,4.053,2.539,6.955,2.56l-1.365,17.344c-5.568,0-10.176,4.267-10.624,9.813
+					c-0.939,11.499-6.848,23.424-15.424,31.125c-2.923,2.624-4.181,6.677-3.221,10.517l4.352,17.429
+					c0.96,3.819,3.925,6.827,7.765,7.765l38.251,9.557c12.843,3.221,22.656,12.907,26.325,25.088l-188.885-0.021
+					C69.227,371.819,79.061,362.133,91.925,358.891z'
+                  />
+                  <path d='M96,64c-5.888,0-10.667,4.779-10.667,10.667S90.112,85.333,96,85.333s10.667-4.779,10.667-10.667S101.888,64,96,64z' />
+                </g>
+              </g>
+            </g>
+          </svg>
+          <h3 className='text-gray-200 font-bold mt-2'>
+            Portfolio and Personal Website Development
+          </h3>
           <p className='text-gray-200 text-sm m-2'>
-            JavaScript is a lightweight interpreted programming language
+            Leverage React JS to create a professional portfolio and personal
+            websites.
           </p>
-          <button className='h-10 py-0 bg-transparent shadow-sm border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-800 text-yellow-500 transition duration-300 ease-in-out'>
-            Read More
-          </button>
         </div>
       </div>
       <span className='text-gray-200 absolute bottom-[1.2rem] -translate-x-1/2'>
@@ -83,10 +186,26 @@ const ServicesPage = ({ next }) => {
       </span>
       <span
         onClick={next}
-        className='absolute w-6 h-6 bottom-4 right-6 cursor-pointer justify-center items-center inline-flex nextprev-btn'
-        data-page='turn-2'
+        className='absolute fill-white hover:fill-yellow-500 duration-300 w-6 h-6 bottom-4 right-6 cursor-pointer justify-center items-center inline-flex nextprev-btn'
+        data-page='turn-1'
       >
-        <box-icon name='chevron-right' color='#e5e7eb'></box-icon>{' '}
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          viewBox='0 0 24 24'
+          id='chevron-right'
+        >
+          <g data-name='Layer 2'>
+            <g data-name='chevron-right'>
+              <rect
+                width='24'
+                height='24'
+                opacity='0'
+                transform='rotate(-90 12 12)'
+              ></rect>
+              <path d='M10.5 17a1 1 0 0 1-.71-.29 1 1 0 0 1 0-1.42L13.1 12 9.92 8.69a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l3.86 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-.7.32z'></path>
+            </g>
+          </g>
+        </svg>
       </span>
     </div>
   );

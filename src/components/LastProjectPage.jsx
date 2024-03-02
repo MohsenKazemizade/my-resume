@@ -14,10 +14,26 @@ const LastProjectPage = ({ next }) => {
       </span>
       <span
         onClick={next}
-        className='absolute w-6 h-6 bottom-4 right-6 cursor-pointer justify-center items-center inline-flex nextprev-btn'
-        data-page='turn-2'
+        className='absolute fill-white hover:fill-yellow-500 duration-300 w-6 h-6 bottom-4 right-6 cursor-pointer justify-center items-center inline-flex nextprev-btn'
+        data-page='turn-1'
       >
-        <box-icon name='chevron-right' color='#e5e7eb'></box-icon>{' '}
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          viewBox='0 0 24 24'
+          id='chevron-right'
+        >
+          <g data-name='Layer 2'>
+            <g data-name='chevron-right'>
+              <rect
+                width='24'
+                height='24'
+                opacity='0'
+                transform='rotate(-90 12 12)'
+              ></rect>
+              <path d='M10.5 17a1 1 0 0 1-.71-.29 1 1 0 0 1 0-1.42L13.1 12 9.92 8.69a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l3.86 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-.7.32z'></path>
+            </g>
+          </g>
+        </svg>
       </span>
     </div>
   );

@@ -3,7 +3,7 @@ import 'boxicons';
 import './App.css';
 import ContactPage from './components/ContactPage';
 import ProfilePage from './components/ProfilePage';
-import WorkExperience from './components/WorkExperience';
+import WorkExperiencePage from './components/WorkExperiencePage';
 import ServicesPage from './components/ServicesPage';
 import CertificationsPage from './components/CertificationsPage';
 import SkillsPage from './components/SkillsPage';
@@ -89,7 +89,7 @@ function App() {
             id='turn-1'
             className={`absolute h-full w-6/12 flex shadow-lg p-[2rem] right-0 transform-style-3d origin-left duration-1000 ease-[cubic-bezier(0.645,0.045,0.355,1)] ${turnOnePageOne}${turnTwoPageOne}${turnThreePageOne}${turnFourPageOne}`}
           >
-            <WorkExperience next={onNextPage} />
+            <WorkExperiencePage next={onNextPage} />
             <CertificationsPage previousPage={onPreviousPage} />
           </div>
           <div

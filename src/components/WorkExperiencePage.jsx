@@ -1,15 +1,13 @@
 import React from 'react';
 
-const Certifications = ({ previousPage }) => {
+const WorkExperiencePage = ({ next }) => {
   return (
     <div
-      id='page-back'
-      className='absolute top-0 left-0 h-full w-full bg-gradient-to-r from-slate-700 to-slate-950 rotate-y-180 py-6 px-8 pageBack'
-      // className='absolute top-0 left-0 h-full w-full bg-gradient-to-r from-slate-700 to-slate-950 rotate-y-180 py-6 px-8 -translate-z-px'
+      id='page-front'
+      className='absolute top-0 left-0 h-full w-full bg-gradient-to-r from-slate-700 to-slate-950 py-6 px-8 pageFront'
+      // className='absolute top-0 left-0 h-full w-full bg-gradient-to-r from-slate-700 to-slate-950 rotate-y-0 py-6 px-8 translate-z-0.5'
     >
-      <h1 id='title' className='text-gray-200 text-4xl font-bold mb-4'>
-        Certifications
-      </h1>
+      <h1 className='text-gray-200 text-4xl font-bold mb-8'>Work Experience</h1>
       <div
         id='workeduc-box'
         className='flex flex-col h-fit gap-5 border-l-[3px] border-yellow-500'
@@ -30,12 +28,13 @@ const Certifications = ({ previousPage }) => {
             ></path>
           </svg>
           <span className='text-yellow-500 ml-1 align-top text-xl font-semibold'>
-            2016 - 2016
+            2020 - 2021
           </span>
-          <h3 className='text-gray-200 font-bold'>CIW Designer-EuroCert</h3>
+          <h3 className='text-gray-200 font-bold'>Web Developer</h3>
           <p className='text-gray-200 text-start'>
-            Holding a CIW Designer certification from EuroCert, showcasing my
-            skills in web design principles and creating user-focused websites.
+            dar modat sarbazi dar in time dar khane mashghule yadgiri react
+            budam va dar kenar oon react redux ro yad gereftam bedardam nakhord
+            raftam reduxtoolkit yad gereftam
           </p>
         </div>
         <div
@@ -54,15 +53,13 @@ const Certifications = ({ previousPage }) => {
             ></path>
           </svg>
           <span className='text-yellow-500 ml-1 align-top text-xl font-semibold'>
-            2017 - 2017
+            2020 - 2021
           </span>
-          <h3 className='text-gray-200 font-bold'>
-            Android Developer-EuroCert
-          </h3>
+          <h3 className='text-gray-200 font-bold'>Web Developer</h3>
           <p className='text-gray-200 text-start'>
-            "Earned the Android Developer certification from EuroCert,
-            validating my expertise in crafting innovative Android
-            applications."
+            dar modat sarbazi dar in time dar khane mashghule yadgiri react
+            budam va dar kenar oon react redux ro yad gereftam bedardam nakhord
+            raftam reduxtoolkit yad gereftam
           </p>
         </div>
         <div
@@ -81,13 +78,13 @@ const Certifications = ({ previousPage }) => {
             ></path>
           </svg>
           <span className='text-yellow-500 ml-1 align-top text-xl font-semibold'>
-            2018 - 2018
+            2020 - 2021
           </span>
-          <h3 className='text-gray-200 font-bold'>Web Design Specialist</h3>
+          <h3 className='text-gray-200 font-bold'>Web Developer</h3>
           <p className='text-gray-200 text-start'>
-            Higher Education Institute of Engineers Web Design Specialist from
-            the Higher Education Institute of Engineers, demonstrating advanced
-            expertise in innovative web design.
+            dar modat sarbazi dar in time dar khane mashghule yadgiri react
+            budam va dar kenar oon react redux ro yad gereftam bedardam nakhord
+            raftam reduxtoolkit yad gereftam
           </p>
         </div>
       </div>
@@ -95,23 +92,28 @@ const Certifications = ({ previousPage }) => {
         id='number-page'
         className='text-gray-200 absolute bottom-[1.2rem] -translate-x-1/2'
       >
-        2
+        1
       </span>
       <span
-        onClick={previousPage}
-        className='absolute fill-white hover:fill-yellow-500 duration-300 w-6 h-6 bottom-4 left-6 cursor-pointer justify-center items-center inline-flex nextprev-btn'
+        onClick={next}
+        className='absolute fill-white hover:fill-yellow-500 duration-300 w-6 h-6 bottom-4 right-6 cursor-pointer justify-center items-center inline-flex nextprev-btn'
         data-page='turn-1'
       >
         <svg
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 24 24'
-          id='chevron-left'
+          id='chevron-right'
         >
           <g data-name='Layer 2'>
-            <path
-              d='M13.36 17a1 1 0 0 1-.72-.31l-3.86-4a1 1 0 0 1 0-1.4l4-4a1 1 0 1 1 1.42 1.42L10.9 12l3.18 3.3a1 1 0 0 1 0 1.41 1 1 0 0 1-.72.29z'
-              data-name='chevron-left'
-            ></path>
+            <g data-name='chevron-right'>
+              <rect
+                width='24'
+                height='24'
+                opacity='0'
+                transform='rotate(-90 12 12)'
+              ></rect>
+              <path d='M10.5 17a1 1 0 0 1-.71-.29 1 1 0 0 1 0-1.42L13.1 12 9.92 8.69a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l3.86 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-.7.32z'></path>
+            </g>
           </g>
         </svg>
       </span>
@@ -119,4 +121,4 @@ const Certifications = ({ previousPage }) => {
   );
 };
 
-export default Certifications;
+export default WorkExperiencePage;
