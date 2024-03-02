@@ -1,10 +1,34 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const ContactMe = ({ backToProfilePage, previousPage }) => {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [msg, setMsg] = useState('');
+
+  const form = useRef();
+
+  const sendEmail = e => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_wfm6fts', 'template_jxouvbo', form.current, {
+        publicKey: 'LUNcmCY5SVymHR3Dh',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        error => {
+          console.log('FAILED...', error.text);
+        }
+      );
+
+    setFullName('');
+    setEmail('');
+    setMsg('');
+  };
 
   const handleFullNameChange = e => {
     let newfullname = e.target.value;
@@ -18,94 +42,83 @@ const ContactMe = ({ backToProfilePage, previousPage }) => {
     let newMsg = e.target.value;
     setMsg(newMsg);
   };
-  const handleSend = () => {
-    setFullName('');
-    setEmail('');
-    setMsg('');
-  };
+  // const handleSend = () => {
+  //   setFullName('');
+  //   setEmail('');
+  //   setMsg('');
+  // };
   return (
-    <div
-      id='page-back3'
-      className='absolute top-0 left-0 h-full w-full bg-gradient-to-r from-slate-700 to-slate-950 rotate-y-180 -translate-z-px py-6 px-8'
-    >
-      <h1 id='title' className='text-gray-200 text-4xl font-bold mb-4'>
-        Contact Me
-      </h1>
-      <div id='skills-box' className='flex flex-wrap gap-6'>
-        <div className='relative  w-full mt-6'>
+    <div className='absolute top-0 left-0 h-full w-full bg-gradient-to-r from-slate-700 to-slate-950 rotate-y-180 -translate-z-px py-6 px-8'>
+      <h1 className='text-gray-200 text-4xl font-bold mb-4'>Contact Me</h1>
+      <div className='flex flex-wrap gap-6'>
+        <form ref={form} onSubmit={sendEmail} className='relative  w-full mt-6'>
           <input
             type='text'
             value={fullName}
+            name='user_name'
             onChange={handleFullNameChange}
-            className={`peer text-md w-full h-10 bg-transparent duration-150 ease-linear outline-none pl-2  focus:border-yellow-500 ' ${
+            className={`peer/name mb-10 text-md w-full h-10 bg-transparent duration-150 ease-linear outline-none pl-2  focus:border-yellow-500 ' ${
               fullName.length === 0
                 ? 'border-b-2'
                 : 'border-b-2 border-yellow-500'
             } `}
           />
           <label
-            className={`absolute translate-y-0 duration-100 ease-linear left-0 pt-1 pl-1 peer-focus-within:text-sm peer-focus-within:-translate-y-5 peer-focus-within:text-yellow-500 ${
+            className={`absolute translate-y-0 duration-100 ease-linear left-0 pt-1 pl-1 peer-focus-within/name:text-sm peer-focus-within/name:-translate-y-3.5 peer-focus-within/name:text-yellow-500 ${
               fullName.length === 0
                 ? 'font-bold'
-                : ' font-bold text-sm -translate-y-5 text-yellow-500'
+                : ' font-bold text-sm -translate-y-3.5 text-yellow-500'
             } `}
-            // className='absolute translate-y-0 duration-100 ease-linear font-bold left-0 mt-1 '
           >
             Full Name
           </label>
-          <div className='relative mt-10'>
-            <input
-              type='email'
-              value={email}
-              onChange={handleEmailChange}
-              className={`peer text-md w-full h-10 bg-transparent duration-150 ease-linear outline-none pl-2 focus:border-b-2 focus:border-yellow-500 ' ${
-                email.length === 0
-                  ? 'border-b-2'
-                  : 'border-b-2 border-yellow-500'
-              } `}
-            />
-            <label
-              className={`absolute translate-y-0 duration-100 ease-linear left-0 pt-1 pl-1 peer-focus-within:text-sm peer-focus-within:-translate-y-5 peer-focus-within:text-yellow-500 ${
-                email.length === 0
-                  ? 'font-bold'
-                  : ' font-bold text-sm -translate-y-5 text-yellow-500'
-              } `}
-              // className='absolute translate-y-0 duration-100 ease-linear font-bold left-0 mt-1 '
-            >
-              Email Address
-            </label>
-          </div>
-          <div className='relative mt-10'>
-            <textarea
-              value={msg}
-              rows={6}
-              maxLength={255}
-              onChange={handleMsgChange}
-              className={`peer pt-4 text-left text-md w-full bg-transparent duration-150 ease-linear outline-none pl-2 focus:border-b-2 focus:border-yellow-500 ' ${
-                msg.length === 0 ? 'border-b-2' : 'border-b-2 border-yellow-500'
-              } `}
-            ></textarea>
 
-            <label
-              className={`absolute translate-y-0 duration-100 ease-linear left-0 pt-1 pl-1 peer-focus-within:text-sm peer-focus-within:-translate-y-5 peer-focus-within:text-yellow-500 ${
-                msg.length === 0
-                  ? 'font-bold'
-                  : ' font-bold text-sm -translate-y-5 text-yellow-500'
-              } `}
-              // className='absolute translate-y-0 duration-100 ease-linear font-bold left-0 mt-1 '
-            >
-              Tell me what is it in you mind...
-            </label>
-          </div>
-        </div>
-        <div>
-          <button
-            onClick={handleSend}
-            className='h-10 py-0 text-sm bg-transparent shadow-sm border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-800 hover:border-yellow-500 text-yellow-500 transition duration-300 ease-in-out'
+          <input
+            type='email'
+            value={email}
+            name='user_email'
+            onChange={handleEmailChange}
+            className={`peer/email mb-10 text-md w-full h-10 bg-transparent duration-150 ease-linear outline-none pl-2 focus:border-b-2 focus:border-yellow-500 ' ${
+              email.length === 0 ? 'border-b-2' : 'border-b-2 border-yellow-500'
+            } `}
+          />
+          <label
+            className={`absolute translate-y-0 duration-100 ease-linear left-0 pt-1 pl-1 peer-focus-within/email:text-sm peer-focus-within/email:-translate-y-3.5 peer-focus-within/email:text-yellow-500 ${
+              email.length === 0
+                ? 'font-bold'
+                : ' font-bold text-sm -translate-y-3.5 text-yellow-500'
+            } `}
           >
-            SEND
-          </button>
-        </div>
+            Email Address
+          </label>
+
+          <textarea
+            value={msg}
+            rows={6}
+            name='message'
+            maxLength={255}
+            onChange={handleMsgChange}
+            className={`peer/text mb-10 pt-4 text-left text-md w-full bg-transparent duration-150 ease-linear outline-none pl-2 focus:border-b-2 focus:border-yellow-500 ' ${
+              msg.length === 0 ? 'border-b-2' : 'border-b-2 border-yellow-500'
+            } `}
+          ></textarea>
+          <label
+            className={`absolute translate-y-0 duration-100 ease-linear left-0 pt-1 pl-1 peer-focus-within/text:text-sm peer-focus-within/text:-translate-y-3.5 peer-focus-within/text:text-yellow-500 ${
+              msg.length === 0
+                ? 'font-bold'
+                : ' font-bold text-sm -translate-y-3.5 text-yellow-500'
+            } `}
+            // className='absolute translate-y-0 duration-100 ease-linear font-bold left-0 mt-1 '
+          >
+            Tell me what is it in you mind...
+          </label>
+
+          <input
+            type='submit'
+            className='h-10 py-0 justify-center text-center text-sm bg-transparent shadow-sm border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-800 hover:border-yellow-500 text-yellow-500 transition duration-300 ease-in-out'
+            value='Send Message'
+          />
+        </form>
       </div>
       <span
         id='number-page'

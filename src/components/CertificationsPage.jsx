@@ -60,9 +60,8 @@ const Certifications = ({ previousPage }) => {
             Android Developer-EuroCert
           </h3>
           <p className='text-gray-200 text-start'>
-            "Earned the Android Developer certification from EuroCert,
-            validating my expertise in crafting innovative Android
-            applications."
+            Earned the Android Developer certification from EuroCert, validating
+            my expertise in crafting innovative Android applications.
           </p>
         </div>
         <div
