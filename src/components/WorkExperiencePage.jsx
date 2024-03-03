@@ -28,13 +28,16 @@ const WorkExperiencePage = ({ next }) => {
             ></path>
           </svg>
           <span className='text-yellow-500 ml-1 align-top text-xl font-semibold'>
-            2020 - 2021
+            2018 - 2020
           </span>
-          <h3 className='text-gray-200 font-bold'>Web Developer</h3>
+          <h3 className='text-gray-200 font-bold'>
+            Android Developer at Shamim Golshan Company
+          </h3>
           <p className='text-gray-200 text-start'>
-            dar modat sarbazi dar in time dar khane mashghule yadgiri react
-            budam va dar kenar oon react redux ro yad gereftam bedardam nakhord
-            raftam reduxtoolkit yad gereftam
+            As an Android Developer at Shamim Golshan Company, I specialized in
+            crafting innovative mobile applications, focusing on user
+            experience, performance optimization, and leveraging the latest
+            Android technologies.
           </p>
         </div>
         <div
@@ -55,11 +58,14 @@ const WorkExperiencePage = ({ next }) => {
           <span className='text-yellow-500 ml-1 align-top text-xl font-semibold'>
             2020 - 2021
           </span>
-          <h3 className='text-gray-200 font-bold'>Web Developer</h3>
+          <h3 className='text-gray-200 font-bold'>
+            Freelance Teacher in Web Development
+          </h3>
           <p className='text-gray-200 text-start'>
-            dar modat sarbazi dar in time dar khane mashghule yadgiri react
-            budam va dar kenar oon react redux ro yad gereftam bedardam nakhord
-            raftam reduxtoolkit yad gereftam
+            As a Freelance Teacher, I equipped teenagers with the fundamentals
+            of web development, teaching basic HTML, CSS, and JavaScript,
+            fostering creativity and problem-solving skills in a supportive
+            learning environment.
           </p>
         </div>
         <div
@@ -78,13 +84,15 @@ const WorkExperiencePage = ({ next }) => {
             ></path>
           </svg>
           <span className='text-yellow-500 ml-1 align-top text-xl font-semibold'>
-            2020 - 2021
+            2021 - 2023
           </span>
-          <h3 className='text-gray-200 font-bold'>Web Developer</h3>
+          <h3 className='text-gray-200 font-bold'>
+            Freelance Front-End Developer Using React
+          </h3>
           <p className='text-gray-200 text-start'>
-            dar modat sarbazi dar in time dar khane mashghule yadgiri react
-            budam va dar kenar oon react redux ro yad gereftam bedardam nakhord
-            raftam reduxtoolkit yad gereftam
+            As a Freelance Front-End Developer, I excelled in developing
+            dynamic, responsive web applications using React, focusing on user
+            experience, performance, and scalable, maintainable codebases.
           </p>
         </div>
       </div>

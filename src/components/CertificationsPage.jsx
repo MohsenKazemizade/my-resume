@@ -30,7 +30,7 @@ const Certifications = ({ previousPage }) => {
             ></path>
           </svg>
           <span className='text-yellow-500 ml-1 align-top text-xl font-semibold'>
-            2016 - 2016
+            2018
           </span>
           <h3 className='text-gray-200 font-bold'>CIW Designer-EuroCert</h3>
           <p className='text-gray-200 text-start'>
@@ -54,7 +54,7 @@ const Certifications = ({ previousPage }) => {
             ></path>
           </svg>
           <span className='text-yellow-500 ml-1 align-top text-xl font-semibold'>
-            2017 - 2017
+            2018
           </span>
           <h3 className='text-gray-200 font-bold'>
             Android Developer-EuroCert
@@ -80,7 +80,7 @@ const Certifications = ({ previousPage }) => {
             ></path>
           </svg>
           <span className='text-yellow-500 ml-1 align-top text-xl font-semibold'>
-            2018 - 2018
+            2020
           </span>
           <h3 className='text-gray-200 font-bold'>Web Design Specialist</h3>
           <p className='text-gray-200 text-start'>
