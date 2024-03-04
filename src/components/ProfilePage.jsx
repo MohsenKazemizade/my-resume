@@ -58,7 +58,7 @@ const ProfilePage = ({ goToContactPage }) => {
       <p className='text-gray-200 text-left mb-4'>
         {/* Hi I am Mohsen Kazemizade a Web Developer. Skilled React Developer, focused
         on user-centric, responsive web solutions. Adept in JavaScript and
-        React, passionate about innovation and collaborative growth. */}
+        React, passionate about innovation and collaborative growth.test */}
         Hi I am Mohsen Kazemi a Web Developer. Dedicated React Developer with
         expertise in crafting responsive web applications using React and
         Tailwind css. Proven ability to enhance user interfaces and experiences,
