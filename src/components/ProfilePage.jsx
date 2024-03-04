@@ -56,7 +56,7 @@ const ProfilePage = ({ goToContactPage }) => {
         </a>
       </div>
       <p className='text-gray-200 text-left mb-4'>
-        {/* Hi I am Mohsen Kazemi a Web Developer. Skilled React Developer, focused
+        {/* Hi I am Mohsen Kazemizade a Web Developer. Skilled React Developer, focused
         on user-centric, responsive web solutions. Adept in JavaScript and
         React, passionate about innovation and collaborative growth. */}
         Hi I am Mohsen Kazemi a Web Developer. Dedicated React Developer with
