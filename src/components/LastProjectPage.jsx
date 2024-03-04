@@ -14,8 +14,10 @@ const LastProjectPage = ({ next }) => {
       <div className='bg-[url(./assets/Free iMac Mockup.png)] bg-cover w-full'>
         {/* <img src={image} alt='' /> */}
         <img src={image2} alt='' />
-        <div className='flex justify-between px-2'>
-          <h3 className='text-gray-200 text-xl font-bold'>Personal Website</h3>
+        <div className='flex justify-between items-center px-2'>
+          <h3 className='text-gray-200 text-xl font-bold items-center'>
+            Personal Website
+          </h3>
           <a
             href='#'
             className='group hover:text-yellow-500 cursor-pointer text-gray-200 flex justify-center items-center gap-2 hover:underline'
@@ -39,7 +41,12 @@ const LastProjectPage = ({ next }) => {
           </a>
         </div>
         <div className='w-full flex justify-evenly my-14 '>
-          <button className='group flex bg-yellow-500 shadow-sm border-2 border-yellow-500 hover:bg-transparent hover:text-yellow-500 transition duration-300 ease-in-out text-gray-800 items-center justify-center gap-2'>
+          <button
+            onClick={() =>
+              window.open('https://github.com/MohsenKazemizade/my-portfolio')
+            }
+            className='group flex bg-yellow-500 shadow-sm border-2 border-yellow-500 hover:bg-transparent hover:text-yellow-500 transition duration-300 ease-in-out text-gray-800 items-center justify-center gap-2'
+          >
             Source Code
             <span className='fill-gray-800 group-hover:fill-yellow-500 transition duration-300 ease-in-out'>
               <svg

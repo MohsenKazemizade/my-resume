@@ -16,7 +16,8 @@ const ProfilePage = ({ goToContactPage }) => {
       <h3 className='mb-4 text-2xl font-bold text-yellow-500'>Web Developer</h3>
       <div id='social-media' className='mb-4'>
         <a
-          href='#'
+          href='https://github.com/MohsenKazemizade'
+          target='_blank'
           className='fill-yellow-500 hover:fill-gray-800 hover:bg-yellow-500 duration-300 inline-flex h-10 w-10 mx-1 bg-transparent border-2 border-yellow-500 justify-center items-center rounded-full '
         >
           <svg width='24px' height='24px' viewBox='0 0 24 24' id='github'>
@@ -27,7 +28,8 @@ const ProfilePage = ({ goToContactPage }) => {
           </svg>
         </a>
         <a
-          href='#'
+          href='https://twitter.com/MaisonCuz'
+          target='_blank'
           className='fill-yellow-500 hover:fill-gray-800 hover:bg-yellow-500 duration-300 inline-flex h-10 w-10 mx-1 bg-transparent border-2 border-yellow-500 justify-center items-center rounded-full cursor-pointer'
         >
           <svg width='24px' height='24px' viewBox='0 0 30 30'>
@@ -35,7 +37,8 @@ const ProfilePage = ({ goToContactPage }) => {
           </svg>
         </a>
         <a
-          href='#'
+          href='https://www.linkedin.com/in/mohsen-kazemi-751761137/'
+          target='_blank'
           className='fill-yellow-500 hover:fill-gray-800 hover:bg-yellow-500 duration-300 inline-flex h-10 w-10 mx-1 bg-transparent border-2 border-yellow-500 justify-center items-center rounded-full'
         >
           <svg width='24px' height='24px' viewBox='0 0 30 30'>
@@ -43,7 +46,8 @@ const ProfilePage = ({ goToContactPage }) => {
           </svg>
         </a>
         <a
-          href='#'
+          href='https://www.instagram.com/maisoncuz/'
+          target='_blank'
           className='fill-yellow-500 hover:fill-gray-800 hover:bg-yellow-500 duration-300 inline-flex h-10 w-10 mx-1 bg-transparent border-2 border-yellow-500 justify-center items-center rounded-full cursor-pointer'
         >
           <svg width='24px' height='24px' viewBox='0 0 64 64'>
