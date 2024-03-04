@@ -100,6 +100,7 @@ const SliderProjects = () => {
             </div>
           </div>
         </label>
+        {/* ///////// */}
         {/* <input type='radio' name='slide' id='c5' hidden />
         <label
           for='c5'

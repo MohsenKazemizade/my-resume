@@ -52,9 +52,14 @@ const ProfilePage = ({ goToContactPage }) => {
         </a>
       </div>
       <p className='text-gray-200 text-left mb-4'>
-        Hi I am Mohsen Kazemi a Web Developer. Skilled React Developer, focused
+        {/* Hi I am Mohsen Kazemi a Web Developer. Skilled React Developer, focused
         on user-centric, responsive web solutions. Adept in JavaScript and
-        React, passionate about innovation and collaborative growth.
+        React, passionate about innovation and collaborative growth. */}
+        Hi I am Mohsen Kazemi a Web Developer. Dedicated React Developer with
+        expertise in crafting responsive web applications using React and
+        Tailwind css. Proven ability to enhance user interfaces and experiences,
+        focusing on performance and scalable solutions. Committed to innovative
+        web development.
       </p>
       <div className='w-full flex justify-evenly my-auto'>
         <button className='bg-yellow-500 shadow-sm border-2 border-yellow-500 hover:bg-transparent hover:text-yellow-500 transition duration-300 ease-in-out text-gray-800'>
