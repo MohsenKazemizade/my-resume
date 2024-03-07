@@ -1,6 +1,4 @@
 import React from 'react';
-import SliderProjects from './SliderProjects';
-import image from '../assets/Free iMac Mockup.png';
 import image2 from '../assets/2Free iMac Mockup.png';
 
 const LastProjectPage = ({ next }) => {
