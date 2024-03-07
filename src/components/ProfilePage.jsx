@@ -1,7 +1,9 @@
 import React from 'react';
 import image from '../assets/photo_2024-01-28_15-49-04.jpg';
+// import MyCV from '../assets/cv.pdf';
 
 const ProfilePage = ({ goToContactPage }) => {
+  const MyCV = 'http://localhost:5173/cv.pdf';
   return (
     <div
       id='profile-page'
@@ -66,9 +68,11 @@ const ProfilePage = ({ goToContactPage }) => {
         web development.
       </p>
       <div className='w-full flex justify-evenly my-auto'>
-        <button className='bg-yellow-500 shadow-sm border-2 border-yellow-500 hover:bg-transparent hover:text-yellow-500 transition duration-300 ease-in-out text-gray-800'>
-          Download CV
-        </button>
+        <a href={MyCV} download>
+          <button className='rounded-[8px] font-medium hover:border-yellow-500 py-[0.6em] px-[1.2em] cursor-pointer bg-yellow-500 shadow-sm border-2 border-yellow-500 hover:bg-transparent hover:text-yellow-500 transition duration-300 ease-in-out text-gray-800'>
+            Download CV
+          </button>
+        </a>
         <button
           onClick={goToContactPage}
           className='bg-transparent shadow-sm border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-800 transition duration-300 ease-in-out text-yellow-500'

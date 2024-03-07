@@ -28,7 +28,7 @@ const WorkExperiencePage = ({ next }) => {
             ></path>
           </svg>
           <span className='text-yellow-500 ml-1 align-top text-xl font-semibold'>
-            2018 - 2020
+            2018 - 2019
           </span>
           <h3 className='text-gray-200 font-bold'>
             Android Developer at Shamim Golshan Company
@@ -56,7 +56,7 @@ const WorkExperiencePage = ({ next }) => {
             ></path>
           </svg>
           <span className='text-yellow-500 ml-1 align-top text-xl font-semibold'>
-            2020 - 2021
+            2019 - 2020
           </span>
           <h3 className='text-gray-200 font-bold'>
             Freelance Teacher in Web Development
@@ -84,7 +84,7 @@ const WorkExperiencePage = ({ next }) => {
             ></path>
           </svg>
           <span className='text-yellow-500 ml-1 align-top text-xl font-semibold'>
-            2021 - 2023
+            2020 - 2023
           </span>
           <h3 className='text-gray-200 font-bold'>
             Freelance Front-End Developer Using React
