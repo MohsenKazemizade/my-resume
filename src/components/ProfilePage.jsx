@@ -3,7 +3,7 @@ import image from '../assets/photo_2024-01-28_15-49-04.jpg';
 // import MyCV from '../assets/cv.pdf';
 
 const ProfilePage = ({ goToContactPage }) => {
-  const MyCV = 'http://localhost:5173/cv.pdf';
+  const MyCV = '/cv.pdf';
   return (
     <div
       id='profile-page'
