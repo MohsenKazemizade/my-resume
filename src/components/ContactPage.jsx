@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { Toaster, toast } from 'sonner';
 
 const ContactMe = ({ backToProfilePage, previousPage }) => {
   const [fullName, setFullName] = useState('');
@@ -8,23 +9,27 @@ const ContactMe = ({ backToProfilePage, previousPage }) => {
   const [msg, setMsg] = useState('');
 
   const form = useRef();
-
+  // console.log(fullName, email, msg);
   const sendEmail = e => {
     e.preventDefault();
-
-    emailjs
-      .sendForm('service_wfm6fts', 'template_jxouvbo', form.current, {
-        publicKey: 'LUNcmCY5SVymHR3Dh',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        error => {
-          console.log('FAILED...', error.text);
-        }
-      );
-
+    if (!fullName || !email || !msg) {
+      return console.log('not valid');
+    } else {
+      emailjs
+        .sendForm('service_wfm6fts', 'template_jxouvbo', form.current, {
+          publicKey: 'LUNcmCY5SVymHR3Dh',
+        })
+        .then(
+          setTimeout(() => {
+            toast.success('Your Message has been sent successfully');
+          }, 500),
+          error => {
+            setTimeout(() => {
+              toast.error('Sending message Failed');
+            }, 500);
+          }
+        );
+    }
     setFullName('');
     setEmail('');
     setMsg('');
@@ -42,11 +47,7 @@ const ContactMe = ({ backToProfilePage, previousPage }) => {
     let newMsg = e.target.value;
     setMsg(newMsg);
   };
-  // const handleSend = () => {
-  //   setFullName('');
-  //   setEmail('');
-  //   setMsg('');
-  // };
+
   return (
     <div className='absolute top-0 left-0 h-full w-full bg-gradient-to-r from-slate-700 to-slate-950 rotate-y-180 -translate-z-px py-6 px-8'>
       <h1 className='text-gray-200 text-4xl font-bold mb-4'>Contact Me</h1>
@@ -57,15 +58,13 @@ const ContactMe = ({ backToProfilePage, previousPage }) => {
             value={fullName}
             name='user_name'
             onChange={handleFullNameChange}
-            className={`peer/name mb-10 text-md w-full h-10 bg-transparent duration-150 ease-linear outline-none pl-2  focus:border-yellow-500 ' ${
-              fullName.length === 0
-                ? 'border-b-2'
-                : 'border-b-2 border-yellow-500'
+            className={`peer/name mb-10 text-gray-200 text-md w-full h-10 bg-transparent duration-150 ease-linear outline-none pl-2  focus:border-yellow-500 ' ${
+              !fullName ? 'border-b-2' : 'border-b-2 border-yellow-500'
             } `}
           />
           <label
-            className={`absolute translate-y-0 duration-100 ease-linear left-0 pt-1 pl-1 peer-focus-within/name:text-sm peer-focus-within/name:-translate-y-3.5 peer-focus-within/name:text-yellow-500 ${
-              fullName.length === 0
+            className={`absolute text-gray-200 duration-100 ease-linear left-0 pt-1 pl-1 peer-focus-within/name:text-sm peer-focus-within/name:-translate-y-3.5 peer-focus-within/name:text-yellow-500 ${
+              !fullName
                 ? 'font-bold'
                 : ' font-bold text-sm -translate-y-3.5 text-yellow-500'
             } `}
@@ -78,13 +77,13 @@ const ContactMe = ({ backToProfilePage, previousPage }) => {
             value={email}
             name='user_email'
             onChange={handleEmailChange}
-            className={`peer/email mb-10 text-md w-full h-10 bg-transparent duration-150 ease-linear outline-none pl-2 focus:border-b-2 focus:border-yellow-500 ' ${
-              email.length === 0 ? 'border-b-2' : 'border-b-2 border-yellow-500'
+            className={`peer/email mb-10 text-gray-200 text-md w-full  invalid:border-red-400  invalid:text-red-400 h-10 bg-transparent duration-150 ease-linear outline-none pl-2 focus:border-b-2 focus:border-yellow-500 ' ${
+              !email ? 'border-b-2' : 'border-b-2 border-yellow-500'
             } `}
           />
           <label
-            className={`absolute translate-y-0 duration-100 ease-linear left-0 pt-1 pl-1 peer-focus-within/email:text-sm peer-focus-within/email:-translate-y-3.5 peer-focus-within/email:text-yellow-500 ${
-              email.length === 0
+            className={`absolute text-gray-200 duration-100 ease-linear left-0 pt-1 pl-1 peer-focus-within/email:text-sm peer-focus-within/email:-translate-y-3.5 peer-focus-within/email:text-yellow-500 peer-invalid/email:text-red-400  ${
+              !email
                 ? 'font-bold'
                 : ' font-bold text-sm -translate-y-3.5 text-yellow-500'
             } `}
@@ -98,13 +97,13 @@ const ContactMe = ({ backToProfilePage, previousPage }) => {
             name='message'
             maxLength={255}
             onChange={handleMsgChange}
-            className={`peer/text mb-10 pt-4 text-left text-md w-full bg-transparent duration-150 ease-linear outline-none pl-2 focus:border-b-2 focus:border-yellow-500 ' ${
-              msg.length === 0 ? 'border-b-2' : 'border-b-2 border-yellow-500'
+            className={`peer/text mb-10 pt-4 text-gray-200 text-left text-md w-full bg-transparent duration-150 ease-linear outline-none pl-2 focus:border-b-2 focus:border-yellow-500 ' ${
+              !msg ? 'border-b-2' : 'border-b-2 border-yellow-500'
             } `}
           ></textarea>
           <label
-            className={`absolute translate-y-0 duration-100 ease-linear left-0 pt-1 pl-1 peer-focus-within/text:text-sm peer-focus-within/text:-translate-y-3.5 peer-focus-within/text:text-yellow-500 ${
-              msg.length === 0
+            className={`absolute text-gray-200 duration-100 ease-linear left-0 pt-1 pl-1 peer-focus-within/text:text-sm peer-focus-within/text:-translate-y-3.5 peer-focus-within/text:text-yellow-500 ${
+              !msg
                 ? 'font-bold'
                 : ' font-bold text-sm -translate-y-3.5 text-yellow-500'
             } `}
@@ -115,7 +114,8 @@ const ContactMe = ({ backToProfilePage, previousPage }) => {
 
           <input
             type='submit'
-            className='h-10 py-0 justify-center text-center text-sm bg-transparent shadow-sm border-2 border-yellow-500 hover:bg-yellow-500 hover:text-gray-800 hover:border-yellow-500 text-yellow-500 transition duration-300 ease-in-out'
+            disabled={!fullName || !email || !msg ? true : false}
+            className='h-10 py-0 justify-center text-center text-sm bg-transparent shadow-sm border-2 disabled:cursor-not-allowed border-yellow-500 hover:bg-yellow-500 disabled:bg-transparent peer-invalid/email:cursor-not-allowed hover:text-gray-800 disabled:text-yellow-500 hover:border-yellow-500 text-yellow-500 transition duration-300 ease-in-out disabled:opacity-75'
             value='Send Message'
           />
         </form>
@@ -128,14 +128,10 @@ const ContactMe = ({ backToProfilePage, previousPage }) => {
       </span>
       <span
         onClick={previousPage}
-        className='absolute fill-white hover:fill-yellow-500 duration-300 w-6 h-6 bottom-4 left-6 cursor-pointer justify-center items-center inline-flex nextprev-btn'
+        className='absolute fill-gray-200 hover:fill-yellow-500 duration-300 w-6 h-6 bottom-4 left-6 cursor-pointer justify-center items-center inline-flex nextprev-btn'
         data-page='turn-1'
       >
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          viewBox='0 0 24 24'
-          id='chevron-left'
-        >
+        <svg viewBox='0 0 24 24' id='chevron-left'>
           <g data-name='Layer 2'>
             <path
               d='M13.36 17a1 1 0 0 1-.72-.31l-3.86-4a1 1 0 0 1 0-1.4l4-4a1 1 0 1 1 1.42 1.42L10.9 12l3.18 3.3a1 1 0 0 1 0 1.41 1 1 0 0 1-.72.29z'

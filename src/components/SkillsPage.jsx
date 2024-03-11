@@ -348,14 +348,10 @@ const SkillsPage = ({ previousPage }) => {
       </span>
       <span
         onClick={previousPage}
-        className='absolute fill-white hover:fill-yellow-500 duration-300 w-6 h-6 bottom-4 left-6 cursor-pointer justify-center items-center inline-flex nextprev-btn'
+        className='absolute fill-gray-200 hover:fill-yellow-500 duration-300 w-6 h-6 bottom-4 left-6 cursor-pointer justify-center items-center inline-flex nextprev-btn'
         data-page='turn-1'
       >
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          viewBox='0 0 24 24'
-          id='chevron-left'
-        >
+        <svg viewBox='0 0 24 24' id='chevron-left'>
           <g data-name='Layer 2'>
             <path
               d='M13.36 17a1 1 0 0 1-.72-.31l-3.86-4a1 1 0 0 1 0-1.4l4-4a1 1 0 1 1 1.42 1.42L10.9 12l3.18 3.3a1 1 0 0 1 0 1.41 1 1 0 0 1-.72.29z'

@@ -71,14 +71,10 @@ const LastProjectPage = ({ next }) => {
       </span>
       <span
         onClick={next}
-        className='absolute fill-white hover:fill-yellow-500 duration-300 w-6 h-6 bottom-4 right-6 cursor-pointer justify-center items-center inline-flex nextprev-btn'
+        className='absolute fill-gray-200 hover:fill-yellow-500 duration-300 w-6 h-6 bottom-4 right-6 cursor-pointer justify-center items-center inline-flex nextprev-btn'
         data-page='turn-1'
       >
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          viewBox='0 0 24 24'
-          id='chevron-right'
-        >
+        <svg viewBox='0 0 24 24' id='chevron-right'>
           <g data-name='Layer 2'>
             <g data-name='chevron-right'>
               <rect

@@ -84,9 +84,3 @@ button:focus-visible {
 .services-content {
   flex: 1 1 10rem;
 }
-/* ----------------------------------------SliderPrevWorks */
-
-input:checked + label {
-  width: 421px;
-  height: 300px;
-}

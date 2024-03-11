@@ -98,7 +98,7 @@ const Certifications = ({ previousPage }) => {
       </span>
       <span
         onClick={previousPage}
-        className='absolute fill-white hover:fill-yellow-500 duration-300 w-6 h-6 bottom-4 left-6 cursor-pointer justify-center items-center inline-flex nextprev-btn'
+        className='absolute fill-gray-200 hover:fill-yellow-500 duration-300 w-6 h-6 bottom-4 left-6 cursor-pointer justify-center items-center inline-flex nextprev-btn'
         data-page='turn-1'
       >
         <svg
