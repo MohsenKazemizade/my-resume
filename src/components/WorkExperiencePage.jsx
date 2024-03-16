@@ -1,5 +1,3 @@
-import React from 'react';
-
 const WorkExperiencePage = ({ next }) => {
   return (
     <div
@@ -10,7 +8,7 @@ const WorkExperiencePage = ({ next }) => {
       <h1 className='text-gray-200 text-4xl font-bold mb-8'>Work Experience</h1>
       <div
         id='workeduc-box'
-        className='flex flex-col h-fit gap-5 border-l-[3px] border-yellow-500'
+        className='flex flex-col h-fit gap-3 border-l-[3px] border-yellow-500'
       >
         <div
           id='workeduc-content'

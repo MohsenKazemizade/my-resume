@@ -1,4 +1,3 @@
-import React from 'react';
 import image from '../assets/photo_2024-01-28_15-49-04.jpg';
 // import MyCV from '../assets/cv.pdf';
 
@@ -20,6 +19,7 @@ const ProfilePage = ({ goToContactPage }) => {
         <a
           href='https://github.com/MohsenKazemizade'
           target='_blank'
+          rel='noreferrer'
           className='fill-yellow-500 hover:fill-gray-800 hover:bg-yellow-500 duration-300 inline-flex h-10 w-10 mx-1 bg-transparent border-2 border-yellow-500 justify-center items-center rounded-full '
         >
           <svg width='24px' height='24px' viewBox='0 0 24 24' id='github'>
@@ -32,6 +32,7 @@ const ProfilePage = ({ goToContactPage }) => {
         <a
           href='https://twitter.com/MaisonCuz'
           target='_blank'
+          rel='noreferrer'
           className='fill-yellow-500 hover:fill-gray-800 hover:bg-yellow-500 duration-300 inline-flex h-10 w-10 mx-1 bg-transparent border-2 border-yellow-500 justify-center items-center rounded-full cursor-pointer'
         >
           <svg width='24px' height='24px' viewBox='0 0 30 30'>
@@ -41,6 +42,7 @@ const ProfilePage = ({ goToContactPage }) => {
         <a
           href='https://www.linkedin.com/in/mohsen-kazemi-751761137/'
           target='_blank'
+          rel='noreferrer'
           className='fill-yellow-500 hover:fill-gray-800 hover:bg-yellow-500 duration-300 inline-flex h-10 w-10 mx-1 bg-transparent border-2 border-yellow-500 justify-center items-center rounded-full'
         >
           <svg width='24px' height='24px' viewBox='0 0 30 30'>
@@ -50,6 +52,7 @@ const ProfilePage = ({ goToContactPage }) => {
         <a
           href='https://www.instagram.com/maisoncuz/'
           target='_blank'
+          rel='noreferrer'
           className='fill-yellow-500 hover:fill-gray-800 hover:bg-yellow-500 duration-300 inline-flex h-10 w-10 mx-1 bg-transparent border-2 border-yellow-500 justify-center items-center rounded-full cursor-pointer'
         >
           <svg width='24px' height='24px' viewBox='0 0 64 64'>

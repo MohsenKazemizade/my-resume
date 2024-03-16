@@ -5,7 +5,7 @@ import ContactPage from './components/ContactPage';
 import ProfilePage from './components/ProfilePage';
 import WorkExperiencePage from './components/WorkExperiencePage';
 import ServicesPage from './components/ServicesPage';
-import { Toaster, toast } from 'sonner';
+import { Toaster } from 'sonner';
 import CertificationsPage from './components/CertificationsPage';
 import SkillsPage from './components/SkillsPage';
 import LastProjectPage from './components/LastProjectPage';
