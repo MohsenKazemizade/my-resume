@@ -26,16 +26,15 @@ const WorkExperiencePage = ({ next }) => {
             ></path>
           </svg>
           <span className='text-yellow-500 ml-1 align-top text-xl font-semibold'>
-            2018 - 2019
+            2020 - 2023
           </span>
           <h3 className='text-gray-200 font-bold'>
-            Android Developer at Shamim Golshan Company
+            Freelance Front-End Developer Using React
           </h3>
           <p className='text-gray-200 text-start'>
-            As an Android Developer at Shamim Golshan Company, I specialized in
-            crafting innovative mobile applications, focusing on user
-            experience, performance optimization, and leveraging the latest
-            Android technologies.
+            As a Freelance Front-End Developer, I excelled in developing
+            dynamic, responsive web applications using React, focusing on user
+            experience, performance, and scalable, maintainable codebases.
           </p>
         </div>
         <div
@@ -82,15 +81,16 @@ const WorkExperiencePage = ({ next }) => {
             ></path>
           </svg>
           <span className='text-yellow-500 ml-1 align-top text-xl font-semibold'>
-            2020 - 2023
+            2018 - 2019
           </span>
           <h3 className='text-gray-200 font-bold'>
-            Freelance Front-End Developer Using React
+            Android Developer at Shamim Golshan Company
           </h3>
           <p className='text-gray-200 text-start'>
-            As a Freelance Front-End Developer, I excelled in developing
-            dynamic, responsive web applications using React, focusing on user
-            experience, performance, and scalable, maintainable codebases.
+            As an Android Developer at Shamim Golshan Company, I specialized in
+            crafting innovative mobile applications, focusing on user
+            experience, performance optimization, and leveraging the latest
+            Android technologies.
           </p>
         </div>
       </div>

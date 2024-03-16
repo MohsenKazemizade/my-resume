@@ -103,7 +103,7 @@ const SkillsPage = ({ previousPage }) => {
               </svg>
               ReacrJS
             </span>
-            <span className='text-gray-200 w-24 h-20 inline-flex border-2 rounded border-yellow-500 hover:shadow-yellow-500 font-semibold flex-col justify-center items-center transition duration-300 ease-in-out hover:shadow-md cursor-pointer'>
+            <span className='text-gray-200 w-24 h-20 inline-flex border-2 rounded border-yellow-500 hover:shadow-yellow-500 font-semibold flex-col justify-center items-center transition duration-300 ease-in-out hover:shadow-md cursor-pointer text-sm'>
               <svg
                 fill='#eab308'
                 width='50px'
@@ -113,7 +113,7 @@ const SkillsPage = ({ previousPage }) => {
               >
                 <path d='M12 6.036c-2.667 0-4.333 1.325-5 3.976 1-1.325 2.167-1.822 3.5-1.491.761.189 1.305.738 1.906 1.345C13.387 10.855 14.522 12 17 12c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.907-1.345-.98-.99-2.114-2.134-4.593-2.134zM7 12c-2.667 0-4.333 1.325-5 3.976 1-1.326 2.167-1.822 3.5-1.491.761.189 1.305.738 1.907 1.345.98.989 2.115 2.134 4.594 2.134 2.667 0 4.333-1.325 5-3.976-1 1.325-2.167 1.822-3.5 1.491-.761-.189-1.305-.738-1.906-1.345C10.613 13.145 9.478 12 7 12z' />
               </svg>
-              TailwindCSS
+              Tailwind CSS
             </span>
             <span className='text-gray-200 w-24 h-20 inline-flex border-2 rounded border-yellow-500 hover:shadow-yellow-500 font-semibold flex-col justify-center items-center transition duration-300 ease-in-out hover:shadow-md cursor-pointer'>
               <svg

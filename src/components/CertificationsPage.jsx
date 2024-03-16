@@ -28,12 +28,13 @@ const Certifications = ({ previousPage }) => {
             ></path>
           </svg>
           <span className='text-yellow-500 ml-1 align-top text-xl font-semibold'>
-            2018
+            2020
           </span>
-          <h3 className='text-gray-200 font-bold'>CIW Designer-EuroCert</h3>
+          <h3 className='text-gray-200 font-bold'>Web Design Specialist</h3>
           <p className='text-gray-200 text-start'>
-            Holding a CIW Designer certification from EuroCert, showcasing my
-            skills in web design principles and creating user-focused websites.
+            Higher Education Institute of Engineers Web Design Specialist from
+            the Higher Education Institute of Engineers, demonstrating advanced
+            expertise in innovative web design.
           </p>
         </div>
         <div
@@ -78,13 +79,12 @@ const Certifications = ({ previousPage }) => {
             ></path>
           </svg>
           <span className='text-yellow-500 ml-1 align-top text-xl font-semibold'>
-            2020
+            2018
           </span>
-          <h3 className='text-gray-200 font-bold'>Web Design Specialist</h3>
+          <h3 className='text-gray-200 font-bold'>CIW Designer-EuroCert</h3>
           <p className='text-gray-200 text-start'>
-            Higher Education Institute of Engineers Web Design Specialist from
-            the Higher Education Institute of Engineers, demonstrating advanced
-            expertise in innovative web design.
+            Holding a CIW Designer certification from EuroCert, showcasing my
+            skills in web design principles and creating user-focused websites.
           </p>
         </div>
       </div>
