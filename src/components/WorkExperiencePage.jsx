@@ -26,7 +26,7 @@ const WorkExperiencePage = ({ next }) => {
             ></path>
           </svg>
           <span className="text-yellow-500 ml-1 align-top text-xl font-semibold">
-            2020 - 2023
+            2024 - Present
           </span>
           <h3 className="text-gray-200 font-bold">
             Full Stack Developer Using NextJS at Asa masir navgan
@@ -52,7 +52,7 @@ const WorkExperiencePage = ({ next }) => {
             ></path>
           </svg>
           <span className="text-yellow-500 ml-1 align-top text-xl font-semibold">
-            2020 - 2023
+            2020 - 2024
           </span>
           <h3 className="text-gray-200 font-bold">
             Freelance Front-End Developer Using React
