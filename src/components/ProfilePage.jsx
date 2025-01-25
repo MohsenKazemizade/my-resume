@@ -40,7 +40,7 @@ const ProfilePage = ({ goToContactPage }) => {
           </svg>
         </a>
         <a
-          href="https://www.linkedin.com/in/mohsen-kazemi-751761137/"
+          href="https://www.linkedin.com/in/mohsen-kazemizade-5190992a1"
           target="_blank"
           rel="noreferrer"
           className="fill-yellow-500 hover:fill-gray-800 hover:bg-yellow-500 duration-300 inline-flex h-10 w-10 mx-1 bg-transparent border-2 border-yellow-500 justify-center items-center rounded-full"

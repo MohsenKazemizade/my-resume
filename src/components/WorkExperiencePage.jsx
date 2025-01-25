@@ -55,12 +55,13 @@ const WorkExperiencePage = ({ next }) => {
             2020 - 2024
           </span>
           <h3 className="text-gray-200 font-bold">
-            Freelance Front-End Developer Using React
+            Full Stack Developer at Wood & Metal
           </h3>
           <p className="text-gray-200 text-start">
-            As a Freelance Front-End Developer, I excelled in developing
-            dynamic, responsive web applications using React, focusing on user
-            experience, performance, and scalable, maintainable codebases.
+            As a Full Stack Developer using React and Nodejs, I excelled in
+            developing dynamic, responsive web applications using React,
+            focusing on user experience, performance, and scalable, maintainable
+            codebases.
           </p>
         </div>
         <div
