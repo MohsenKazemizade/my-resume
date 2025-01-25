@@ -1,3 +1,4 @@
+import CopySpan from "./CopySpan";
 const Certifications = ({ previousPage }) => {
   return (
     <div
@@ -55,9 +56,22 @@ const Certifications = ({ previousPage }) => {
           <span className="text-yellow-500 ml-1 align-top text-xl font-semibold">
             2018
           </span>
-          <h3 className="text-gray-200 font-bold">
-            Android Developer-EuroCert
-          </h3>
+          <a
+            href="https://www.eurocertglobal.eu/Pages/view.aspx?PostID=30"
+            target="_blank"
+            className="group"
+            rel="noreferrer"
+          >
+            <h3 className="text-gray-200 font-bold group-hover:text-yellow-500">
+              Android Developer-EuroCert
+            </h3>
+          </a>
+          {/* <span
+            onClick={handleCopyClick}
+            className="absolute top-7 right-0 text-gray-200 cursor-pointer rounded-md border px-1 hover:border-yellow-500 hover:text-yellow-500 "
+          > */}
+          <CopySpan text="19TC02MK271115" />
+          {/* </span> */}
           <p className="text-gray-200 text-start">
             Earned the Android Developer certification from EuroCert, validating
             my expertise in crafting innovative Android applications.
@@ -81,7 +95,23 @@ const Certifications = ({ previousPage }) => {
           <span className="text-yellow-500 ml-1 align-top text-xl font-semibold">
             2018
           </span>
-          <h3 className="text-gray-200 font-bold">CIW Designer-EuroCert</h3>
+          <a
+            href="https://www.eurocertglobal.eu/Pages/view.aspx?PostID=30"
+            target="_blank"
+            className="group"
+            rel="noreferrer"
+          >
+            <h3 className="text-gray-200 font-bold group-hover:text-yellow-500">
+              CIW Designer-EuroCert
+            </h3>
+          </a>
+          {/* <span
+            onClick={handleCopyClick}
+            className="absolute top-7 right-0 text-gray-200 cursor-pointer rounded-md border px-1 hover:border-yellow-500 hover:text-yellow-500 "
+          > */}
+          <CopySpan text="20TC01MK341839" />
+
+          {/* </span> */}
           <p className="text-gray-200 text-start">
             Holding a CIW Designer certification from EuroCert, showcasing my
             skills in web design principles and creating user-focused websites.
